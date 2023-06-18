@@ -57,7 +57,7 @@ export const evmChainIds = [
   KnownChainIds.GnosisMainnet,
 ] as const
 
-export type EvmChainId = typeof evmChainIds[number]
+export type EvmChainId = (typeof evmChainIds)[number]
 
 export type EvmChainAdapter =
   | ethereum.ChainAdapter

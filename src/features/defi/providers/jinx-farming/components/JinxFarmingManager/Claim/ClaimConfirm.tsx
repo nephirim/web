@@ -148,7 +148,13 @@ export const ClaimConfirm = ({ accountId, assetId, amount, onBack }: ClaimConfir
     ;(async () => {
       try {
         if (
-          !(walletState.wallet && feeAsset && feeMarketData && jinxFarmingContract && accountAddress)
+          !(
+            walletState.wallet &&
+            feeAsset &&
+            feeMarketData &&
+            jinxFarmingContract &&
+            accountAddress
+          )
         )
           return
         const feeData = await getClaimFeeData(accountAddress)

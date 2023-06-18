@@ -16,7 +16,7 @@ jest.mock('./exchange-rates-host/exchange-rates-host', () => ({
 describe('fiat market service', () => {
   describe('findByFiatSymbol', () => {
     const args = {
-      symbol: <const>'EUR',
+      symbol: 'EUR' as const,
     }
     it('can return from first market service and skip the next', async () => {
       const result = await findByFiatSymbol(args)
@@ -32,7 +32,7 @@ describe('fiat market service', () => {
 
   describe('findPriceHistoryByFiatSymbol', () => {
     const args = {
-      symbol: <const>'EUR',
+      symbol: 'EUR' as const,
       timeframe: HistoryTimeframe.HOUR,
     }
     it('can return from first market service and skip the next', async () => {

@@ -7,19 +7,17 @@ import {
   fromChainId,
 } from '@shapeshiftoss/caip'
 import type {
+  ChainAdapter,
+  EvmBaseAdapter,
+  EvmChainId,
+  FeeData,
+  UtxoBaseAdapter,
+  UtxoChainId,
   CosmosSdkBaseAdapter,
   CosmosSdkChainId,
   FeeDataEstimate,
 } from '@shapeshiftoss/chain-adapters'
-import {
-  type ChainAdapter,
-  type EvmBaseAdapter,
-  type EvmChainId,
-  type FeeData,
-  type UtxoBaseAdapter,
-  type UtxoChainId,
-  utxoChainIds,
-} from '@shapeshiftoss/chain-adapters'
+import { utxoChainIds } from '@shapeshiftoss/chain-adapters'
 import type { HDWallet } from '@shapeshiftoss/hdwallet-core'
 import { supportsETH } from '@shapeshiftoss/hdwallet-core'
 import { KnownChainIds } from '@shapeshiftoss/types'

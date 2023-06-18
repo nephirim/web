@@ -5,7 +5,7 @@ import { getConfig } from 'config'
 import flatten from 'lodash/flatten'
 import memoize from 'lodash/memoize'
 import uniqBy from 'lodash/uniqBy'
-import queryString from 'querystring'
+import queryString from 'querystring-es3'
 
 import type { CommonFiatCurrencies } from '../config'
 import type { CreateUrlProps } from '../types'

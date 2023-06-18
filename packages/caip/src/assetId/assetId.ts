@@ -17,9 +17,9 @@ import { parseAssetIdRegExp } from '../utils'
 
 export type AssetId = Nominal<string, 'AssetId'>
 
-export type AssetNamespace = typeof ASSET_NAMESPACE[keyof typeof ASSET_NAMESPACE]
+export type AssetNamespace = (typeof ASSET_NAMESPACE)[keyof typeof ASSET_NAMESPACE]
 
-export type AssetReference = typeof ASSET_REFERENCE[keyof typeof ASSET_REFERENCE]
+export type AssetReference = (typeof ASSET_REFERENCE)[keyof typeof ASSET_REFERENCE]
 
 type ToAssetIdWithChainId = {
   chainNamespace?: never

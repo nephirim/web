@@ -31,7 +31,7 @@ export const jinxEthStakingContractAddresses = [
   ETH_FOX_STAKING_CONTRACT_ADDRESS_V1,
 ] as const
 
-export type JinxEthStakingContractAddress = typeof jinxEthStakingContractAddresses[number]
+export type JinxEthStakingContractAddress = (typeof jinxEthStakingContractAddresses)[number]
 
 const isJinxEthStakingContractAddress = (
   address: JinxEthStakingContractAddress | string,
