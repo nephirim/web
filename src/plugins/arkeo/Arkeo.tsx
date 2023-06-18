@@ -23,11 +23,11 @@ type OpportunityReturn = {
 }
 
 const cosmosOsmosLpAssetId = 'cosmos:osmosis-1/ibc:gamm/pool/1'
-const FOXY_STAKING_CONTRACT = 'eip155:1/erc20:0xee77aa3fd23bbebaf94386dd44b548e9a785ea4b'
+const JINXY_STAKING_CONTRACT = 'eip155:1/erc20:0xee77aa3fd23bbebaf94386dd44b548e9a785ea4b'
 
 const opportunities: OpportunityReturn = {
   staking: [
-    FOXY_STAKING_CONTRACT,
+    JINXY_STAKING_CONTRACT,
     jinxEthStakingAssetIdV6,
     osmosisAssetId,
     cosmosAssetId,

@@ -1,6 +1,6 @@
 import type { JsonFragment } from '@ethersproject/abi/lib/fragments'
 
-export const FOXY_STAKING_ABI: JsonFragment[] = [
+export const JINXY_STAKING_ABI: JsonFragment[] = [
   {
     inputs: [
       {

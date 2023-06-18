@@ -4,15 +4,15 @@ import type { Tx } from '../../../generated/ethereum'
 import type { BaseTxMetadata } from '../../../types'
 import type { SubParser, TxSpecific } from '../../parser'
 import { getSigHash, txInteractsWithContract } from '../../parser'
-import { FOXY_STAKING_ABI } from './abi/jinxyStaking'
-import { FOXY_STAKING_CONTRACT } from './constants'
+import { JINXY_STAKING_ABI } from './abi/jinxyStaking'
+import { JINXY_STAKING_CONTRACT } from './constants'
 
 export interface TxMetadata extends BaseTxMetadata {
   parser: 'jinxy'
 }
 
 export class Parser implements SubParser<Tx> {
-  readonly abiInterface = new ethers.utils.Interface(FOXY_STAKING_ABI)
+  readonly abiInterface = new ethers.utils.Interface(JINXY_STAKING_ABI)
 
   readonly supportedFunctions = {
     stakeSigHash: this.abiInterface.getSighash('stake(uint256,address)'),
@@ -22,7 +22,7 @@ export class Parser implements SubParser<Tx> {
   }
 
   async parse(tx: Tx): Promise<TxSpecific | undefined> {
-    if (!txInteractsWithContract(tx, FOXY_STAKING_CONTRACT)) return
+    if (!txInteractsWithContract(tx, JINXY_STAKING_CONTRACT)) return
     if (!tx.inputData) return
 
     const txSigHash = getSigHash(tx.inputData)
