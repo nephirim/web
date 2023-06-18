@@ -76,7 +76,7 @@ jest.mock('context/PluginProvider/chainAdapterSingleton', () => {
 
 const hashOrderMock = jest.mocked(hashOrder)
 
-const cowTradeEthToFox: CowTrade<KnownChainIds.EthereumMainnet> = {
+const cowTradeEthToJinx: CowTrade<KnownChainIds.EthereumMainnet> = {
   rate: '14716.04718939437505555958',
   feeData: {
     protocolFees: {},
@@ -95,7 +95,7 @@ const cowTradeEthToFox: CowTrade<KnownChainIds.EthereumMainnet> = {
   minimumBuyAmountAfterFeesCryptoBaseUnit: '14501811818247595090576',
 }
 
-const cowTradeWethToFox: CowTrade<KnownChainIds.EthereumMainnet> = {
+const cowTradeWethToJinx: CowTrade<KnownChainIds.EthereumMainnet> = {
   rate: '14716.04718939437505555958',
   feeData: {
     protocolFees: {},
@@ -114,7 +114,7 @@ const cowTradeWethToFox: CowTrade<KnownChainIds.EthereumMainnet> = {
   minimumBuyAmountAfterFeesCryptoBaseUnit: '272522025311597443544',
 }
 
-const cowTradeFoxToEth: CowTrade<KnownChainIds.EthereumMainnet> = {
+const cowTradeJinxToEth: CowTrade<KnownChainIds.EthereumMainnet> = {
   rate: '0.00004995640398295996',
   feeData: {
     protocolFees: {
@@ -164,7 +164,7 @@ const cowTradeUsdcToXdai: CowTrade<KnownChainIds.GnosisMainnet> = {
   minimumBuyAmountAfterFeesCryptoBaseUnit: '20900340520678280712',
 }
 
-const expectedWethToFoxOrderToSign: CowSwapOrder = {
+const expectedWethToJinxOrderToSign: CowSwapOrder = {
   sellToken: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2',
   buyToken: '0xc770eefad204b5180df6a14ee197d99d808ee52d',
   sellAmount: '16685605000000000',
@@ -180,7 +180,7 @@ const expectedWethToFoxOrderToSign: CowSwapOrder = {
   quoteId: '1',
 }
 
-const expectedFoxToEthOrderToSign: CowSwapOrder = {
+const expectedJinxToEthOrderToSign: CowSwapOrder = {
   sellToken: '0xc770eefad204b5180df6a14ee197d99d808ee52d',
   buyToken: COW_SWAP_NATIVE_ASSET_MARKER_ADDRESS,
   sellAmount: '938195228120306016256',
@@ -215,7 +215,7 @@ const expectedUsdcToXdaiOrderToSign: CowSwapOrder = {
 describe('cowExecuteTrade', () => {
   it('should throw an exception if both assets are not erc20s', async () => {
     const tradeInput: ExecuteTradeInput<KnownChainIds.EthereumMainnet> = {
-      trade: cowTradeEthToFox,
+      trade: cowTradeEthToJinx,
       wallet: {} as HDWallet,
     }
 
@@ -230,7 +230,7 @@ describe('cowExecuteTrade', () => {
 
   it('should call cowService with correct parameters and return the order uid when selling WETH', async () => {
     const tradeInput: ExecuteTradeInput<KnownChainIds.EthereumMainnet> = {
-      trade: cowTradeWethToFox,
+      trade: cowTradeWethToJinx,
       wallet: {} as HDWallet,
     }
 
@@ -252,10 +252,10 @@ describe('cowExecuteTrade', () => {
         '0xe476dadc86e768e4602bc872d4a7d50b03a4c2a609b37bf741f26baa578146bd0ea983f21f58f0e1a29ed653bcfc8afac4fec2a462c2e25e',
     })
     expect(cowService.post).toHaveBeenCalledWith('https://api.cow.fi/mainnet/api/v1/orders/', {
-      ...expectedWethToFoxOrderToSign,
+      ...expectedWethToJinxOrderToSign,
       signingScheme: SIGNING_SCHEME,
       signature: Signature,
-      from: expectedWethToFoxOrderToSign.receiver,
+      from: expectedWethToJinxOrderToSign.receiver,
     })
 
     expect(hashOrderMock).toHaveBeenCalledWith(
@@ -265,7 +265,7 @@ describe('cowExecuteTrade', () => {
         verifyingContract: '0x9008D19f58AAbD9eD0D60971565AA8510560ab41',
         version: 'v2',
       },
-      expectedWethToFoxOrderToSign,
+      expectedWethToJinxOrderToSign,
     )
     expect(mockEthereumChainAdapter.signMessage).toHaveBeenCalledWith({
       messageToSign: {
@@ -278,7 +278,7 @@ describe('cowExecuteTrade', () => {
 
   it('should call cowService with correct parameters and return the order uid when buying ETH', async () => {
     const tradeInput: ExecuteTradeInput<KnownChainIds.EthereumMainnet> = {
-      trade: cowTradeFoxToEth,
+      trade: cowTradeJinxToEth,
       wallet: {} as HDWallet,
     }
 
@@ -301,10 +301,10 @@ describe('cowExecuteTrade', () => {
     })
 
     expect(cowService.post).toHaveBeenCalledWith('https://api.cow.fi/mainnet/api/v1/orders/', {
-      ...expectedFoxToEthOrderToSign,
+      ...expectedJinxToEthOrderToSign,
       signingScheme: SIGNING_SCHEME,
       signature: Signature,
-      from: expectedFoxToEthOrderToSign.receiver,
+      from: expectedJinxToEthOrderToSign.receiver,
     })
 
     expect(hashOrderMock).toHaveBeenCalledWith(
@@ -314,7 +314,7 @@ describe('cowExecuteTrade', () => {
         verifyingContract: '0x9008D19f58AAbD9eD0D60971565AA8510560ab41',
         version: 'v2',
       },
-      expectedFoxToEthOrderToSign,
+      expectedJinxToEthOrderToSign,
     )
     expect(mockEthereumChainAdapter.signMessage).toHaveBeenCalledWith({
       messageToSign: {

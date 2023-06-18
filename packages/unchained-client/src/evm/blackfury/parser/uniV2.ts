@@ -178,11 +178,11 @@ export class Parser implements SubParser<Tx> {
     if (txInteractsWithContract(tx, UNI_V2_ROUTER_CONTRACT)) return await this.parseUniV2(tx)
 
     // TODO: parse any transaction that has input data that is able to be decoded using the `stakingRewardsInterface`
-    const isFoxStakingRewards = UNI_V2_FOX_STAKING_REWARDS_CONTRACTS.some(contract =>
+    const isJinxStakingRewards = UNI_V2_FOX_STAKING_REWARDS_CONTRACTS.some(contract =>
       txInteractsWithContract(tx, contract),
     )
 
-    if (isFoxStakingRewards) return await Promise.resolve(this.parseStakingRewards(tx))
+    if (isJinxStakingRewards) return await Promise.resolve(this.parseStakingRewards(tx))
   }
 
   private static pairFor(tokenA: string, tokenB: string): string {

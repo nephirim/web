@@ -15,7 +15,7 @@ import { getUniswapV2Pools } from './uniswapV2Pools'
 // Yearn SDK is currently rugged upstream
 // import { getUnderlyingVaultTokens, getYearnVaults, getZapperTokens } from './yearnVaults'
 
-const foxyToken: Asset = {
+const jinxyToken: Asset = {
   assetId: toAssetId({
     chainId: ethChainId,
     assetNamespace: 'erc20',
@@ -25,7 +25,7 @@ const foxyToken: Asset = {
   name: 'FOX Yieldy',
   precision: 18,
   color: '#CE3885',
-  icon: 'https://raw.githubusercontent.com/shapeshift/lib/main/packages/asset-service/src/generateAssetData/ethereum/icons/foxy-icon.png',
+  icon: 'https://raw.githubusercontent.com/shapeshift/lib/main/packages/asset-service/src/generateAssetData/ethereum/icons/jinxy-icon.png',
   symbol: 'FOXy',
   explorer: ethereum.explorer,
   explorerAddressLink: ethereum.explorerAddressLink,
@@ -43,7 +43,7 @@ export const getAssets = async (): Promise<Asset[]> => {
   ])
 
   const ethAssets = [
-    foxyToken,
+    jinxyToken,
     ...ethTokens,
     // ...yearnVaults,
     // ...zapperTokens,

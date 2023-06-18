@@ -279,22 +279,22 @@
         "emptyWithdraws": "Pending unstaking requests will show here.",
         "availableDate": "available %{date}"
       },
-      "foxyOverview": {
+      "jinxyOverview": {
         "header": "Deposit FOX to get FOXy to earn",
         "body": "FOXy is a rebasing token pegged to the price of FOX. Staked FOX is put to work across different DeFi protocols to earn the best yield possible.",
         "rewards": "The rewards you earn will accrue automatically.",
         "cta": "Deposit FOX Now",
-        "foxyBalance": "FOXy Balance",
+        "jinxyBalance": "FOXy Balance",
         "withdrawals": "Withdrawals",
         "emptyWithdraws": "Pending or active withdrawals will show here.",
         "availableDate": "available %{date}"
       },
-      "foxFarmingOverview": {
+      "jinxFarmingOverview": {
         "header": "Deposit ETH-FOX LP tokens to %{opportunity} to earn",
         "body": "Approve and stake your liquidity tokens to earn bonus FOX rewards.",
         "rewards": "The rewards you earn will accrue automatically.",
         "cta": "Deposit ETH-FOX LP tokens Now",
-        "foxFarmingBalance": "ETH-FOX LP tokens Balance",
+        "jinxFarmingBalance": "ETH-FOX LP tokens Balance",
         "withdrawals": "Withdrawals",
         "emptyWithdraws": "Pending or active withdrawals will show here.",
         "availableDate": "available %{date}"
@@ -500,7 +500,7 @@
     "overview": "Overview",
     "transactions": "Transactions",
     "tradeHistory": "Trade History",
-    "foxToken": "FOX Opportunities",
+    "jinxToken": "FOX Opportunities",
     "dApps": "dApps",
     "featureFlags": "Feature Flags",
     "demoMode": "Demo Mode",
@@ -513,8 +513,8 @@
     "buyCrypto": "Buy/Sell Crypto",
     "buyCryptoShort": "Buy/Sell",
     "arkeo": "Arkeo Airdrop",
-    "foxMissions": "FOX Missions",
-    "foxMissionsShort": "Missions"
+    "jinxMissions": "FOX Missions",
+    "jinxMissionsShort": "Missions"
   },
   "transactionRow": {
     "send": "Sent",
@@ -565,7 +565,7 @@
       "thor": {
         "transferOut": "Transfer out"
       },
-      "foxy": {
+      "jinxy": {
         "stake": "Stake",
         "unstake": "Unstake",
         "instantUnstake": "Instant Unstake",
@@ -1583,11 +1583,11 @@
     "transfers": "Transfers"
   },
   "plugins": {
-    "foxPage": {
+    "jinxPage": {
       "buyAssetOnCoinbase": "Buy %{assetSymbol} on Coinbase",
-      "totalFoxValue": "Total Fox Value",
-      "foxToken": "ShapeShift %{assetSymbol} Token",
-      "foxDescription": "Since 2019, our shapeshifting FOX Token has been offering users an ever-expanding world of utility and advantages. Today, our ERC-20 governance token not only enables you to influence the future of ShapeShift through your vote, you also have an ever-expanding universe of investing opportunities. Invest, track, and manage your FOX holdings here.",
+      "totalJinxValue": "Total Jinx Value",
+      "jinxToken": "ShapeShift %{assetSymbol} Token",
+      "jinxDescription": "Since 2019, our shapeshifting FOX Token has been offering users an ever-expanding world of utility and advantages. Today, our ERC-20 governance token not only enables you to influence the future of ShapeShift through your vote, you also have an ever-expanding universe of investing opportunities. Invest, track, and manage your FOX holdings here.",
       "getAsset": "Get %{assetSymbol}",
       "trade": "Trade",
       "receive": "Receive",
@@ -1888,23 +1888,23 @@
       "body": "Got %{asset1} and %{asset2}? Provide liquidity to the Uniswap V2 Pool to earn %{apy} APR. PLUS the underlying FOX in the FOX/ETH LP tokens you hold will qualify for the Arkeo airdrop.",
       "cta": "Deposit Liquidity"
     },
-    "foxTokenHolders": {
+    "jinxTokenHolders": {
       "title": "FOX Token Holders",
       "body": "Hodling FOX tokens. The larger your bag, the larger your Arkeo airdrop.",
       "cta": "Trade for FOX",
       "secondary": "Buy FOX"
     },
-    "foxFarmers": {
+    "jinxFarmers": {
       "title": "FOX/ETH LP Farmers",
       "body": "Earn up to %{apy} APR for staking your ETH/FOX LP tokens in the FOX Farm. PLUS the underlying FOX in the ETH/FOX LP tokens you stake in Round 5 of the FOX Farm will qualify for the Arkeo airdrop.",
       "cta": "Stake FOX/ETH LP"
     },
-    "foxyTokenHolders": {
+    "jinxyTokenHolders": {
       "title": "FOXy Token Holders",
       "body": "Earn up to %{apy} APR on your idle FOX with FOX Yieldy (FOXy). PLUS FOXy held in your wallet will be treated the same as FOX and will qualify for the Arkeo airdrop.",
       "cta": "Stake FOX Tokens"
     },
-    "foxEthProviders": {
+    "jinxEthProviders": {
       "title": "FOX/ETH Uniswap V2 LPs",
       "body": "Got %{asset1} and %{asset2}? Provide liquidity to the Uniswap V2 Pool to earn %{apy} APR. PLUS the underlying FOX in the FOX/ETH LP tokens you hold will qualify for the Arkeo airdrop.",
       "cta": "Deposit Liquidity"
@@ -1933,7 +1933,7 @@
     }
   },
   "nft": {
-    "customizeFoxatar": "Customize FOXatar",
+    "customizeJinxatar": "Customize FOXatar",
     "setAsAvatar": "Set as Avatar",
     "floorPrice": "Floor Price",
     "lastPrice": "Last Price",
@@ -1970,12 +1970,12 @@
       "subtitle": "Explore Optimism",
       "cta": "Start Mission"
     },
-    "foxatar": {
+    "jinxatar": {
       "title": "Get a Free & Customizable NFT",
       "subtitle": "Mint a FOXatar",
       "cta": "Start Mission"
     },
-    "foxArmy": {
+    "jinxArmy": {
       "subtitle": "Join the FOX Army",
       "title": "20,000 FOX Pool",
       "cta": "Start Mission"

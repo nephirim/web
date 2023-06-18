@@ -41,29 +41,29 @@ describe('sumProtocolFeesToDenom', () => {
       protocolFees,
     })
 
-    const btcToFoxPriceRatio = bn(cryptoMarketDataById[BTC.assetId].price).div(
+    const btcToJinxPriceRatio = bn(cryptoMarketDataById[BTC.assetId].price).div(
       cryptoMarketDataById[FOX_MAINNET.assetId].price,
     )
-    const ethToFoxPriceRatio = bn(cryptoMarketDataById[ETH.assetId].price).div(
+    const ethToJinxPriceRatio = bn(cryptoMarketDataById[ETH.assetId].price).div(
       cryptoMarketDataById[FOX_MAINNET.assetId].price,
     )
 
-    expect(btcToFoxPriceRatio.gt(0)).toBe(true)
-    expect(ethToFoxPriceRatio.gt(0)).toBe(true)
+    expect(btcToJinxPriceRatio.gt(0)).toBe(true)
+    expect(ethToJinxPriceRatio.gt(0)).toBe(true)
 
-    const btcAmountInFox = convertPrecision({
+    const btcAmountInJinx = convertPrecision({
       value: '3000000',
       inputExponent: BTC.precision,
       outputExponent: FOX_MAINNET.precision,
-    }).times(btcToFoxPriceRatio)
+    }).times(btcToJinxPriceRatio)
 
-    const ethAmountInFox = convertPrecision({
+    const ethAmountInJinx = convertPrecision({
       value: '500000000000000000',
       inputExponent: ETH.precision,
       outputExponent: FOX_MAINNET.precision,
-    }).times(ethToFoxPriceRatio)
+    }).times(ethToJinxPriceRatio)
 
-    const expectation = btcAmountInFox.plus(ethAmountInFox).toString()
+    const expectation = btcAmountInJinx.plus(ethAmountInJinx).toString()
 
     expect(result).toEqual(expectation)
   })

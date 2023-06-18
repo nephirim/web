@@ -34,7 +34,7 @@ describe('adapters:coincap', () => {
       const assetNamespace = 'erc20'
       const assetReference = '0xc770eefad204b5180df6a14ee197d99d808ee52d'
       const assetId = toAssetId({ chainNamespace, chainReference, assetNamespace, assetReference })
-      expect(coincapToAssetId('fox-token')).toEqual(assetId)
+      expect(coincapToAssetId('jinx-token')).toEqual(assetId)
     })
   })
 
@@ -93,7 +93,7 @@ describe('adapters:coincap', () => {
       const assetNamespace = 'erc20'
       const assetReference = '0xc770eefad204b5180df6a14ee197d99d808ee52d'
       const assetId = toAssetId({ chainNamespace, chainReference, assetNamespace, assetReference })
-      expect(assetIdToCoinCap(assetId)).toEqual('fox-token')
+      expect(assetIdToCoinCap(assetId)).toEqual('jinx-token')
     })
 
     it('can get coincap id for cosmos AssetId', () => {

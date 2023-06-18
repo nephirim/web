@@ -1,5 +1,5 @@
 import type { AccountId } from '@shapeshiftoss/caip'
-import { ethChainId, foxAssetId, foxatarAssetId, fromAccountId } from '@shapeshiftoss/caip'
+import { ethChainId, jinxAssetId, jinxatarAssetId, fromAccountId } from '@shapeshiftoss/caip'
 import type { Transaction } from '@shapeshiftoss/chain-adapters'
 import { TxStatus } from '@shapeshiftoss/unchained-client'
 import { IDLE_PROXY_1_CONTRACT_ADDRESS, IDLE_PROXY_2_CONTRACT_ADDRESS } from 'contracts/constants'
@@ -11,7 +11,7 @@ import { isSome } from 'lib/utils'
 import { nftApi } from 'state/apis/nft/nftApi'
 import { assets as assetsSlice } from 'state/slices/assetsSlice/assetsSlice'
 import { makeNftAssetsFromTxs } from 'state/slices/assetsSlice/utils'
-import { foxEthLpAssetId } from 'state/slices/opportunitiesSlice/constants'
+import { jinxEthLpAssetId } from 'state/slices/opportunitiesSlice/constants'
 import { opportunitiesApi } from 'state/slices/opportunitiesSlice/opportunitiesApiSlice'
 import type { IdleStakingSpecificMetadata } from 'state/slices/opportunitiesSlice/resolvers/idle/types'
 import {
@@ -81,7 +81,7 @@ export const TransactionsProvider: React.FC<TransactionsProviderProps> = ({ chil
         // But this is the best we can do at the moment to be reactive
         transfers.some(
           ({ assetId }) =>
-            [foxAssetId, foxEthLpAssetId].includes(assetId) ||
+            [jinxAssetId, jinxEthLpAssetId].includes(assetId) ||
             Object.values(stakingOpportunitiesById).some(opportunity =>
               // Detect Txs including a transfer either of either
               // - an asset being wrapped into an Idle token
@@ -153,7 +153,7 @@ export const TransactionsProvider: React.FC<TransactionsProviderProps> = ({ chil
       if (status !== TxStatus.Confirmed) return
 
       // Only on FOXatar for now, we may want to generalize this to all NFTs with isNft(assetId) in the future
-      if (transfers.some(({ assetId }) => assetId.includes(foxatarAssetId))) {
+      if (transfers.some(({ assetId }) => assetId.includes(jinxatarAssetId))) {
         const { getNftUserTokens } = nftApi.endpoints
         dispatch(
           getNftUserTokens.initiate({ accountIds: walletAccountIds }, { forceRefetch: true }),

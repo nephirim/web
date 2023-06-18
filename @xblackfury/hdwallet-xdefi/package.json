@@ -1,0 +1,25 @@
+{
+  "name": "@shapeshiftoss/hdwallet-xdefi",
+  "version": "1.50.4",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
+    "prepublishOnly": "yarn clean && yarn build"
+  },
+  "dependencies": {
+    "@shapeshiftoss/hdwallet-core": "1.50.4",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.168",
+    "typescript": "^4.3.2"
+  },
+  "gitHead": "3306a2d13568e3d7bd74bb4851593e0f3fdc8c02"
+}

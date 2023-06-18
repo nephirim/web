@@ -20,7 +20,7 @@ import { getCowSwapTradeQuote } from './getCowSwapTradeQuote'
 
 const mockOk = Ok as jest.MockedFunction<typeof Ok>
 
-const foxRate = '0.0873'
+const jinxRate = '0.0873'
 const usdcXdaiRate = '1.001'
 const ethRate = '1233.65940923824103061992'
 const wethRate = '1233.65940923824103061992'
@@ -66,7 +66,7 @@ jest.mock('../getMinimumAmountCryptoHuman/getMinimumAmountCryptoHuman', () => {
 const selectBuyAssetUsdRateSpy = jest.spyOn(selectors, 'selectBuyAssetUsdRate')
 const selectSellAssetUsdRateSpy = jest.spyOn(selectors, 'selectSellAssetUsdRate')
 
-const expectedApiInputWethToFox: CowSwapSellQuoteApiInput = {
+const expectedApiInputWethToJinx: CowSwapSellQuoteApiInput = {
   appData: DEFAULT_APP_DATA,
   buyToken: '0xc770eefad204b5180df6a14ee197d99d808ee52d',
   from: '0x0000000000000000000000000000000000000000',
@@ -78,7 +78,7 @@ const expectedApiInputWethToFox: CowSwapSellQuoteApiInput = {
   validTo: 1656797787,
 }
 
-const expectedApiInputSmallAmountWethToFox: CowSwapSellQuoteApiInput = {
+const expectedApiInputSmallAmountWethToJinx: CowSwapSellQuoteApiInput = {
   appData: DEFAULT_APP_DATA,
   buyToken: '0xc770eefad204b5180df6a14ee197d99d808ee52d',
   from: '0x0000000000000000000000000000000000000000',
@@ -90,7 +90,7 @@ const expectedApiInputSmallAmountWethToFox: CowSwapSellQuoteApiInput = {
   validTo: 1656797787,
 }
 
-const expectedApiInputFoxToEth: CowSwapSellQuoteApiInput = {
+const expectedApiInputJinxToEth: CowSwapSellQuoteApiInput = {
   appData: DEFAULT_APP_DATA,
   buyToken: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
   from: '0x0000000000000000000000000000000000000000',
@@ -114,7 +114,7 @@ const expectedApiInputUsdcGnosisToXdai: CowSwapSellQuoteApiInput = {
   validTo: 1656797787,
 }
 
-const expectedTradeQuoteWethToFox: TradeQuote<KnownChainIds.EthereumMainnet> = {
+const expectedTradeQuoteWethToJinx: TradeQuote<KnownChainIds.EthereumMainnet> = {
   minimumCryptoHuman: '0.011624',
   steps: [
     {
@@ -140,7 +140,7 @@ const expectedTradeQuoteWethToFox: TradeQuote<KnownChainIds.EthereumMainnet> = {
   ],
 }
 
-const expectedTradeQuoteFoxToEth: TradeQuote<KnownChainIds.EthereumMainnet> = {
+const expectedTradeQuoteJinxToEth: TradeQuote<KnownChainIds.EthereumMainnet> = {
   minimumCryptoHuman: '229.09507445589919816724',
   steps: [
     {
@@ -192,7 +192,7 @@ const expectedTradeQuoteUsdcToXdai: TradeQuote<KnownChainIds.GnosisMainnet> = {
   ],
 }
 
-const expectedTradeQuoteSmallAmountWethToFox: TradeQuote<KnownChainIds.EthereumMainnet> = {
+const expectedTradeQuoteSmallAmountWethToJinx: TradeQuote<KnownChainIds.EthereumMainnet> = {
   minimumCryptoHuman: '0.011624',
   steps: [
     {
@@ -220,7 +220,7 @@ const expectedTradeQuoteSmallAmountWethToFox: TradeQuote<KnownChainIds.EthereumM
 
 describe('getCowTradeQuote', () => {
   it('should throw an exception if both assets are not erc20s', async () => {
-    selectBuyAssetUsdRateSpy.mockImplementation(() => foxRate)
+    selectBuyAssetUsdRateSpy.mockImplementation(() => jinxRate)
     selectSellAssetUsdRateSpy.mockImplementation(() => ethRate)
 
     const input: GetTradeQuoteInput = {
@@ -247,7 +247,7 @@ describe('getCowTradeQuote', () => {
   })
 
   it('should call cowService with correct parameters, handle the fees and return the correct trade quote when selling WETH', async () => {
-    selectBuyAssetUsdRateSpy.mockImplementation(() => foxRate)
+    selectBuyAssetUsdRateSpy.mockImplementation(() => jinxRate)
     selectSellAssetUsdRateSpy.mockImplementation(() => wethRate)
 
     const input: GetTradeQuoteInput = {
@@ -267,7 +267,7 @@ describe('getCowTradeQuote', () => {
         Ok({
           data: {
             quote: {
-              ...expectedApiInputWethToFox,
+              ...expectedApiInputWethToJinx,
               sellAmountBeforeFee: undefined,
               sellAmount: '985442057341242012',
               buyAmount: '14707533959600717283163',
@@ -283,16 +283,16 @@ describe('getCowTradeQuote', () => {
     const maybeTradeQuote = await getCowSwapTradeQuote(input, supportedChainIds)
 
     expect(maybeTradeQuote.isOk()).toBe(true)
-    expect(maybeTradeQuote.unwrap()).toEqual(expectedTradeQuoteWethToFox)
+    expect(maybeTradeQuote.unwrap()).toEqual(expectedTradeQuoteWethToJinx)
     expect(cowService.post).toHaveBeenCalledWith(
       'https://api.cow.fi/mainnet/api/v1/quote/',
-      expectedApiInputWethToFox,
+      expectedApiInputWethToJinx,
     )
   })
 
   it('should call cowService with correct parameters, handle the fees and return the correct trade quote when buying ETH', async () => {
     selectBuyAssetUsdRateSpy.mockImplementation(() => ethRate)
-    selectSellAssetUsdRateSpy.mockImplementation(() => foxRate)
+    selectSellAssetUsdRateSpy.mockImplementation(() => jinxRate)
 
     const input: GetTradeQuoteInput = {
       chainId: KnownChainIds.EthereumMainnet,
@@ -311,7 +311,7 @@ describe('getCowTradeQuote', () => {
         Ok({
           data: {
             quote: {
-              ...expectedApiInputFoxToEth,
+              ...expectedApiInputJinxToEth,
               sellAmountBeforeFee: undefined,
               sellAmount: '938195228120306016256',
               buyAmount: '46868859830863283',
@@ -327,10 +327,10 @@ describe('getCowTradeQuote', () => {
     const maybeTradeQuote = await getCowSwapTradeQuote(input, supportedChainIds)
 
     expect(maybeTradeQuote.isOk()).toBe(true)
-    expect(maybeTradeQuote.unwrap()).toEqual(expectedTradeQuoteFoxToEth)
+    expect(maybeTradeQuote.unwrap()).toEqual(expectedTradeQuoteJinxToEth)
     expect(cowService.post).toHaveBeenCalledWith(
       'https://api.cow.fi/mainnet/api/v1/quote/',
-      expectedApiInputFoxToEth,
+      expectedApiInputJinxToEth,
     )
   })
 
@@ -379,7 +379,7 @@ describe('getCowTradeQuote', () => {
   })
 
   it('should call cowService with correct parameters and return quote with original sellAmount when selling a very small amount of WETH', async () => {
-    selectBuyAssetUsdRateSpy.mockImplementation(() => foxRate)
+    selectBuyAssetUsdRateSpy.mockImplementation(() => jinxRate)
     selectSellAssetUsdRateSpy.mockImplementation(() => wethRate)
 
     const input: GetTradeQuoteInput = {
@@ -399,7 +399,7 @@ describe('getCowTradeQuote', () => {
         Ok({
           data: {
             quote: {
-              ...expectedApiInputSmallAmountWethToFox,
+              ...expectedApiInputSmallAmountWethToJinx,
               sellAmountBeforeFee: undefined,
               sellAmount: '9854420573412420',
               buyAmount: '145018118182475950905',
@@ -415,10 +415,10 @@ describe('getCowTradeQuote', () => {
     const maybeTradeQuote = await getCowSwapTradeQuote(input, supportedChainIds)
 
     expect(maybeTradeQuote.isErr()).toBe(false)
-    expect(maybeTradeQuote.unwrap()).toEqual(expectedTradeQuoteSmallAmountWethToFox)
+    expect(maybeTradeQuote.unwrap()).toEqual(expectedTradeQuoteSmallAmountWethToJinx)
     expect(cowService.post).toHaveBeenCalledWith(
       'https://api.cow.fi/mainnet/api/v1/quote/',
-      expectedApiInputSmallAmountWethToFox,
+      expectedApiInputSmallAmountWethToJinx,
     )
   })
 })

@@ -277,22 +277,22 @@
         "emptyWithdraws": "Les demandes de démise en attente s'affichent ici.",
         "availableDate": "disponible %{date}"
       },
-      "foxyOverview": {
+      "jinxyOverview": {
         "header": "Déposer du FOX pour obtenir du FOXy afin de gagner",
         "body": "FOXy est un jeton de rebasage indexé sur le prix de FOX. Les FOX misés sont mis à contribution sur différents protocoles DeFi pour obtenir le meilleur rendement possible.",
         "rewards": "Les récompenses que vous gagnez s'accumuleront automatiquement.",
         "cta": "Déposer des FOX maintenant",
-        "foxyBalance": "Solde FOXy",
+        "jinxyBalance": "Solde FOXy",
         "withdrawals": "Retraits",
         "emptyWithdraws": "Les retraits en attente ou actifs s'afficheront ici.",
         "availableDate": "disponible %{date}"
       },
-      "foxFarmingOverview": {
+      "jinxFarmingOverview": {
         "header": "Déposer des jetons LP ETH-FOX dans %{opportunity} pour gagner",
         "body": "Autorisez et misez vos jetons de liquidité pour gagner des récompenses bonus en FOX.",
         "rewards": "Les récompenses que vous gagnez s'accumuleront automatiquement.",
         "cta": "Déposer des jetons LP ETH-FOX maintenant",
-        "foxFarmingBalance": "Solde de jetons LP ETH-FOX",
+        "jinxFarmingBalance": "Solde de jetons LP ETH-FOX",
         "withdrawals": "Retraits",
         "emptyWithdraws": "Les retraits en attente ou actifs s'afficheront ici.",
         "availableDate": "disponible %{date}"
@@ -497,7 +497,7 @@
     "overview": "Vue d'ensemble",
     "transactions": "Transactions",
     "tradeHistory": "Historique des échanges",
-    "foxToken": "Opportunités FOX",
+    "jinxToken": "Opportunités FOX",
     "dApps": "dApps",
     "featureFlags": "Indicateurs de fonctionnalité",
     "demoMode": "Mode démo",
@@ -510,8 +510,8 @@
     "buyCrypto": "Acheter/Vendre des cryptos",
     "buyCryptoShort": "Achat/Vente",
     "arkeo": "Airdrop Arkeo",
-    "foxMissions": "Missions FOX",
-    "foxMissionsShort": "Missions"
+    "jinxMissions": "Missions FOX",
+    "jinxMissionsShort": "Missions"
   },
   "transactionRow": {
     "send": "Envoi",
@@ -562,7 +562,7 @@
       "thor": {
         "transferOut": "Transfert sortant"
       },
-      "foxy": {
+      "jinxy": {
         "stake": "Mise",
         "unstake": "Démise",
         "instantUnstake": "Démise instantanée",
@@ -1562,11 +1562,11 @@
     "transfers": "Transferts"
   },
   "plugins": {
-    "foxPage": {
+    "jinxPage": {
       "buyAssetOnCoinbase": "Acheter %{assetSymbol} sur Coinbase",
-      "totalFoxValue": "Valeur totale des FOX",
-      "foxToken": "Jeton %{assetSymbol} de ShapeShift",
-      "foxDescription": "Depuis 2019, notre jeton FOX offre aux utilisateurs un éventail toujours plus vaste d'utilités et d'avantages. Aujourd'hui, notre jeton de gouvernance ERC-20 vous permet non seulement d'influencer l'avenir de ShapeShift par votre vote, mais vous disposez également d'un univers toujours plus vaste d'opportunités d'investissement. Investissez, suivez et gérez vos avoirs FOX ici.",
+      "totalJinxValue": "Valeur totale des FOX",
+      "jinxToken": "Jeton %{assetSymbol} de ShapeShift",
+      "jinxDescription": "Depuis 2019, notre jeton FOX offre aux utilisateurs un éventail toujours plus vaste d'utilités et d'avantages. Aujourd'hui, notre jeton de gouvernance ERC-20 vous permet non seulement d'influencer l'avenir de ShapeShift par votre vote, mais vous disposez également d'un univers toujours plus vaste d'opportunités d'investissement. Investissez, suivez et gérez vos avoirs FOX ici.",
       "getAsset": "Obtenir du %{assetSymbol}",
       "trade": "Échanger",
       "receive": "Recevoir",
@@ -1867,23 +1867,23 @@
       "body": "Vous avez des %{asset1} et des %{asset2} ? Fournissez des liquidités au pool Uniswap V2 pour gagner %{apy} APR. DE PLUS, les FOX sous-jacents dans les jetons LP FOX/ETH que vous détenez se qualifieront pour l'Airdrop Areko.",
       "cta": "Déposer des liquidités"
     },
-    "foxTokenHolders": {
+    "jinxTokenHolders": {
       "title": "Détenteurs de jetons FOX",
       "body": "Hodler des jetons FOX. Plus votre poche est grande, plus votre Airdrop Arkeo est grand.",
       "cta": "Échanger contre des FOX",
       "secondary": "Acheter des FOX"
     },
-    "foxFarmers": {
+    "jinxFarmers": {
       "title": "Farmeurs de LP FOX/ETH",
       "body": "Gagnez jusqu'à %{apy} APR en misant vos jetons LP ETH/FOX dans la FOX Farm. DE PLUS, les FOX sous-jacents dans les jetons LP ETH/FOX que vous misez dans le Round 5 de la FOX Farm se qualifieront pour l'Airdrop Arkeo.",
       "cta": "Miser des LP FOX/ETH"
     },
-    "foxyTokenHolders": {
+    "jinxyTokenHolders": {
       "title": "Détenteurs de jetons FOXy",
       "body": "Gagnez jusqu'à %{apy} APR sur vos FOX inactifs avec FOX Yieldy (FOXy). DE PLUS, les FOXy détenus dans votre porte-monnaie seront traités de la même manière que des FOX et se qualifieront pour l'Airdrop Arkeo.",
       "cta": "Miser des jetons FOX"
     },
-    "foxEthProviders": {
+    "jinxEthProviders": {
       "title": "LP de FOX/ETH sur Uniswap V2",
       "body": "Vous avez %{asset1} et %{asset2} ? Fournissez des liquidités au pool Uniswap V2 pour gagner %{apy} APR. DE PLUS, les FOX sous-jacents dans les jetons LP FOX/ETH que vous détenez se qualifieront pour l'Airdrop Arkeo.",
       "cta": "Déposer des liquidités"
@@ -1912,7 +1912,7 @@
     }
   },
   "nft": {
-    "customizeFoxatar": "Personnaliser le FOXatar",
+    "customizeJinxatar": "Personnaliser le FOXatar",
     "setAsAvatar": "Définir comme avatar",
     "floorPrice": "Prix plancher",
     "lastPrice": "Dernier prix",
@@ -1949,12 +1949,12 @@
       "subtitle": "Explorez Optimism",
       "cta": "Commencez la mission"
     },
-    "foxatar": {
+    "jinxatar": {
       "title": "Obtenez un NFT gratuit et personnalisable",
       "subtitle": "Mintez un FOXatar",
       "cta": "Commencez la mission"
     },
-    "foxArmy": {
+    "jinxArmy": {
       "subtitle": "Rejoignez l'armée FOX",
       "title": "Cagnotte de 20 000 FOX",
       "cta": "Commencez la mission"

@@ -277,22 +277,22 @@
         "emptyWithdraws": "Bekleyen staking istekleri burada gösterilir.",
         "availableDate": "kullanılabilir %{date}"
       },
-      "foxyOverview": {
+      "jinxyOverview": {
         "header": "FOXy'yi kazanmak için FOX yatırın",
         "body": "FOXy, FOX fiyatına sabitlenmiş bir yeniden değerleme tokenidir. Stake edilmiş FOX, mümkün olan en iyi getiriyi elde etmek için farklı DeFi protokollerinde çalışır.",
         "rewards": "Kazandığınız ödüller otomatik olarak tahakkuk edecektir.",
         "cta": "Şimdi FOX Yatırın",
-        "foxyBalance": "FOXy Bakiyesi",
+        "jinxyBalance": "FOXy Bakiyesi",
         "withdrawals": "Para Çekme",
         "emptyWithdraws": "Bekleyen veya etkin para çekme işlemleri burada gösterilir.",
         "availableDate": "kullanılabilir %{date}"
       },
-      "foxFarmingOverview": {
+      "jinxFarmingOverview": {
         "header": "Kazanmak için ETH-FOX LP jetonlarını %{opportunity}'e yatırın",
         "body": "Bonus FOX ödülleri kazanmak için likidite jetonlarınızı onaylayın ve stake edin.",
         "rewards": "Kazandığınız ödüller otomatik olarak tahakkuk edecektir.",
         "cta": "Şimdi ETH-FOX LP jetonlarını Yatırın",
-        "foxFarmingBalance": "ETH-FOX LP token Bakiyesi",
+        "jinxFarmingBalance": "ETH-FOX LP token Bakiyesi",
         "withdrawals": "Para çekme",
         "emptyWithdraws": "Bekleyen veya etkin para çekme işlemleri burada gösterilir.",
         "availableDate": "kullanılabilir %{date}"
@@ -497,7 +497,7 @@
     "overview": "Genel Bakış",
     "transactions": "İşlemler",
     "tradeHistory": "Takas Geçmişi",
-    "foxToken": "FOX Fırsatları",
+    "jinxToken": "FOX Fırsatları",
     "dApps": "dApps",
     "featureFlags": "Özellik Bayrakları",
     "demoMode": "Deneme Modu",
@@ -510,8 +510,8 @@
     "buyCrypto": "Kripto Al/Sat",
     "buyCryptoShort": "Al/Sat",
     "arkeo": "Arkeo Airdrop",
-    "foxMissions": "FOX Görevleri",
-    "foxMissionsShort": "Görevler"
+    "jinxMissions": "FOX Görevleri",
+    "jinxMissionsShort": "Görevler"
   },
   "transactionRow": {
     "send": "Gönderilen",
@@ -562,7 +562,7 @@
       "thor": {
         "transferOut": "Dışa Aktar"
       },
-      "foxy": {
+      "jinxy": {
         "stake": "Stake Et",
         "unstake": "Stake Kaldır",
         "instantUnstake": "Stake'i Anında Geri Al",
@@ -1562,11 +1562,11 @@
     "transfers": "Transferler"
   },
   "plugins": {
-    "foxPage": {
+    "jinxPage": {
       "buyAssetOnCoinbase": "Coinbase'de %{assetSymbol} satın alın",
-      "totalFoxValue": "Toplam FOX Değeri",
-      "foxToken": "ShapeShift %{assetSymbol} Jetonu",
-      "foxDescription": "2019'dan bu yana, ShapeShift FOX Token'ımız, kullanıcılara sürekli genişleyen bir fayda ve avantajlar dünyası sunuyor. Bugün, ERC-20 yönetişim belirtecimiz, oylarınızla ShapeShift'in geleceğini etkilemenizi sağlamakla kalmıyor, aynı zamanda sürekli genişleyen bir yatırım fırsatları evrenine de sahipsiniz. Burada FOX varlıklarınıza yatırım yapın, izleyin ve yönetin.",
+      "totalJinxValue": "Toplam FOX Değeri",
+      "jinxToken": "ShapeShift %{assetSymbol} Jetonu",
+      "jinxDescription": "2019'dan bu yana, ShapeShift FOX Token'ımız, kullanıcılara sürekli genişleyen bir fayda ve avantajlar dünyası sunuyor. Bugün, ERC-20 yönetişim belirtecimiz, oylarınızla ShapeShift'in geleceğini etkilemenizi sağlamakla kalmıyor, aynı zamanda sürekli genişleyen bir yatırım fırsatları evrenine de sahipsiniz. Burada FOX varlıklarınıza yatırım yapın, izleyin ve yönetin.",
       "getAsset": "%{assetSymbol} alın",
       "trade": "Takas",
       "receive": "Al",
@@ -1867,23 +1867,23 @@
       "body": "Elinizde %{asset1} ve %{asset2} var mı? %{apy} APR kazanmak için Uniswap V2 Havuzuna likidite sağlayın. AYRICA, sahip olduğunuz FOX/ETH LP tokenlarındaki temel FOX, Arkeo airdrop için uygun olacaktır.",
       "cta": "Likidite Ekleyin"
     },
-    "foxTokenHolders": {
+    "jinxTokenHolders": {
       "title": "FOX Token Sahipleri",
       "body": "Cüzdanda tutulan FOX token'ları. Çantanız ne kadar büyükse, Arkeo airdrop'unuz da o kadar büyük olur.",
       "cta": "FOX Takas yap",
       "secondary": "FOX Satın Al"
     },
-    "foxFarmers": {
+    "jinxFarmers": {
       "title": "FOX/ETH LP Çiftçiler",
       "body": "FOX Farm'da ETH/FOX LP jetonlarınızı staking yaparak %{apy} APR'ye kadar kazanın. AYRICA FOX Farm'ın 5. Turunda yatırdığınız ETH/FOX LP tokenlerinin temelinde yatan FOX, Arkeo airdrop'u için hak kazanacaktır.",
       "cta": "FOX/ETH LP Stake Et"
     },
-    "foxyTokenHolders": {
+    "jinxyTokenHolders": {
       "title": "FOXy Token Sahipleri",
       "body": "FOX Yieldy (FOXy) ile boştaki FOX'unuzdan %{apy}'ye kadar APR kazanın. AYRICA Cüzdanınızda tutulan FOXy, FOX ile aynı muameleyi görecek ve Arkeo airdrop için uygun olacaktır.",
       "cta": "FOX Token Stake Et"
     },
-    "foxEthProviders": {
+    "jinxEthProviders": {
       "title": "FOX/ETH Uniswap V2 LP'ler",
       "body": "%{asset1} ve %{asset2}'ye sahip misiniz? Uniswap V2 Havuzuna likidite sağlayarak %{apy} APR kazanın. AYRICA, sahip olduğunuz FOX/ETH LP tokenlarındaki temel FOX, Arkeo airdrop için uygun olacaktır.",
       "cta": "Likidite Ekleyin"
@@ -1912,7 +1912,7 @@
     }
   },
   "nft": {
-    "customizeFoxatar": "FOXatar'ını Özelleştir",
+    "customizeJinxatar": "FOXatar'ını Özelleştir",
     "setAsAvatar": "Avatar olarak ayarla",
     "floorPrice": "Taban Fiyat",
     "lastPrice": "Son fiyat",
@@ -1949,12 +1949,12 @@
       "subtitle": "Optimism'i Keşfedin",
       "cta": "Göreve Başla"
     },
-    "foxatar": {
+    "jinxatar": {
       "title": "Ücretsiz ve Özelleştirilebilir bir NFT edinin",
       "subtitle": "FOXatar'ı Basın",
       "cta": "Göreve Başla"
     },
-    "foxArmy": {
+    "jinxArmy": {
       "subtitle": "FOX Ordusuna Katılın",
       "title": "20.000 FOX Havuzu",
       "cta": "Göreve Başla"

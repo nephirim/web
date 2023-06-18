@@ -277,22 +277,22 @@
         "emptyWithdraws": "Здесь отображаются незавершенные запросы на снятие стейкинга.",
         "availableDate": "доступно %{date}"
       },
-      "foxyOverview": {
+      "jinxyOverview": {
         "header": "Внесите FOX, чтобы получить FOXy, чтобы заработать",
         "body": "FOXy - это ребейсинговый токен, привязанный к цене FOX. Стейкинг FOX используется в различных протоколах DeFi для получения максимальной доходности.",
         "rewards": "Вознаграждения, которые вы заработаете, будут начисляться автоматически.",
         "cta": "Внести депозит FOX сейчас",
-        "foxyBalance": "Баланс FOXy",
+        "jinxyBalance": "Баланс FOXy",
         "withdrawals": "Вывод средств",
         "emptyWithdraws": "Здесь отображаются ожидающие или активные выводы средств.",
         "availableDate": "доступен %{date}"
       },
-      "foxFarmingOverview": {
+      "jinxFarmingOverview": {
         "header": "Внесите токены ETH-FOX LP на %{opportunity}, чтобы заработать",
         "body": "Подтвердите и стейкайте свои токены ликвидности, чтобы получить бонусные вознаграждения FOX.",
         "rewards": "Вознаграждения, которые вы заработаете, будут начисляться автоматически.",
         "cta": "Внести токены ETH-FOX LP сейчас ",
-        "foxFarmingBalance": "Баланс токенов ETH-FOX LP",
+        "jinxFarmingBalance": "Баланс токенов ETH-FOX LP",
         "withdrawals": "Выводы средств",
         "emptyWithdraws": "Здесь отображаются незавершенные или активные операции по снятию средств.",
         "availableDate": "доступно %{date}"
@@ -497,7 +497,7 @@
     "overview": "Обзор",
     "transactions": "Транзакции",
     "tradeHistory": "История торгов",
-    "foxToken": "FOX возможности",
+    "jinxToken": "FOX возможности",
     "dApps": "dApps",
     "featureFlags": "Feature Flags",
     "demoMode": "Демо-режим",
@@ -510,8 +510,8 @@
     "buyCrypto": "Купить криптовалюту",
     "buyCryptoShort": "Купить/Продать",
     "arkeo": "Arkeo Airdrop",
-    "foxMissions": "Миссии FOX",
-    "foxMissionsShort": "Миссии"
+    "jinxMissions": "Миссии FOX",
+    "jinxMissionsShort": "Миссии"
   },
   "transactionRow": {
     "send": "Отправлено",
@@ -562,7 +562,7 @@
       "thor": {
         "transferOut": "Перевод"
       },
-      "foxy": {
+      "jinxy": {
         "stake": "Стейк",
         "unstake": "Разстейкать",
         "instantUnstake": "Мгновенная отмена стейкинга",
@@ -1562,11 +1562,11 @@
     "transfers": "Переводы"
   },
   "plugins": {
-    "foxPage": {
+    "jinxPage": {
       "buyAssetOnCoinbase": "Купить %{assetSymbol} на Coinbase",
-      "totalFoxValue": "Общая стоимость Fox",
-      "foxToken": "ShapeShift %{assetSymbol} Токен",
-      "foxDescription": "С 2019 года наш токен FOX  предлагает пользователям постоянно расширяющийся мир полезностей и преимуществ. Сегодня наш токен управления ERC-20 не только позволяет вам влиять на будущее ShapeShift с помощью вашего голоса, но и открывает перед вами все более широкие возможности для инвестирования. Инвестируйте, отслеживайте и управляйте своими активами FOX здесь.",
+      "totalJinxValue": "Общая стоимость Jinx",
+      "jinxToken": "ShapeShift %{assetSymbol} Токен",
+      "jinxDescription": "С 2019 года наш токен FOX  предлагает пользователям постоянно расширяющийся мир полезностей и преимуществ. Сегодня наш токен управления ERC-20 не только позволяет вам влиять на будущее ShapeShift с помощью вашего голоса, но и открывает перед вами все более широкие возможности для инвестирования. Инвестируйте, отслеживайте и управляйте своими активами FOX здесь.",
       "getAsset": "Получить %{assetSymbol}",
       "trade": "Торговля",
       "receive": "Получить",
@@ -1867,23 +1867,23 @@
       "body": "Есть %{asset1} и %{asset2}? Предоставьте ликвидность в пул Uniswap V2, чтобы заработать %{apy} APR. ПЛЮС базовый FOX в токенах FOX/ETH LP, которыми вы владеете, будет квалифицирован для участия в  аирдропе Arkeo.",
       "cta": "Внести ликвидность"
     },
-    "foxTokenHolders": {
+    "jinxTokenHolders": {
       "title": "Держатели токенов FOX",
       "body": "Токены холдеров FOX. Чем больше токенов, тем крупнее Arkeo airdrop.",
       "cta": "Обмен на FOX",
       "secondary": "Купить FOX"
     },
-    "foxFarmers": {
+    "jinxFarmers": {
       "title": "LP Фермеры FOX/ETH ",
       "body": "Зарабатывайте до %{apy} APR за размещение своих LP токенов ETH/FOX на ферме FOX. ПЛЮС базовый FOX в токенах ETH/FOX LP, которые вы застейкаете в 5 раунде FOX Farm, будет квалифицирован для Airdrop Arkeo.",
       "cta": "Стейкати FOX/ETH LP"
     },
-    "foxyTokenHolders": {
+    "jinxyTokenHolders": {
       "title": "Держатели токенов FOXy",
       "body": "Зарабатывайте до %{apy} APR на ваш незадействованный FOX с помощью FOX Yieldy (FOXy). ПЛЮС FOXy, хранящиеся в вашем кошельке, будут рассматриваться как FOX и будут иметь право на участие в Arkeo airdrop.",
       "cta": "Стейкать токены FOX"
     },
-    "foxEthProviders": {
+    "jinxEthProviders": {
       "title": "FOX/ETH Uniswap V2 LPs",
       "body": "Есть %{asset1} и %{asset2}? Предоставьте ликвидность в пул Uniswap V2, чтобы заработать %{apy} APR. Кроме того, базовый FOX в токенах FOX/ETH LP, которыми вы владеете, будет участвовать в Arkeo airdrop.",
       "cta": "Внести ликвидность"
@@ -1912,7 +1912,7 @@
     }
   },
   "nft": {
-    "customizeFoxatar": "Настроить FOXatar",
+    "customizeJinxatar": "Настроить FOXatar",
     "setAsAvatar": "Установить в качестве Аватара",
     "floorPrice": "Нижняя цена",
     "lastPrice": "Последняя цена",
@@ -1949,12 +1949,12 @@
       "subtitle": "Исследуйте оптимизм",
       "cta": "Начать миссию"
     },
-    "foxatar": {
+    "jinxatar": {
       "title": "Получите бесплатный и индивидуальный NFT",
       "subtitle": "Сминтить FOXatar",
       "cta": "Начать миссию"
     },
-    "foxArmy": {
+    "jinxArmy": {
       "subtitle": "Вступайте в армию FOX",
       "title": "20,000 FOX Pool",
       "cta": "Начать миссию"

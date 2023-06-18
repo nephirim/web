@@ -8,7 +8,7 @@ export const getUniswapV2Pools = (): Asset[] => {
   const assetNamespace = 'erc20'
   const assetReference = '0x470e8de2ebaef52014a47cb5e6af86884947f08c' // Uniswap V2 - FOX/WETH contract address
   const assetId = toAssetId({ chainId, assetNamespace, assetReference })
-  const foxWeth: Asset = {
+  const jinxWeth: Asset = {
     assetId,
     chainId,
     name: 'ETH/FOX Pool',
@@ -21,5 +21,5 @@ export const getUniswapV2Pools = (): Asset[] => {
     explorerTxLink: ethereum.explorerTxLink,
   }
 
-  return [foxWeth]
+  return [jinxWeth]
 }

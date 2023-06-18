@@ -277,22 +277,22 @@
         "emptyWithdraws": "Ausstehende Stake Beendigungs-Anfragen werden hier angezeigt.",
         "availableDate": "verfügbar %{date}"
       },
-      "foxyOverview": {
+      "jinxyOverview": {
         "header": "Zahlen Sie FOX ein, um FOXy zu verdienen",
         "body": "FOXy ist ein umgewandelter Token, der an den Preis von FOX gekoppelt ist. Staked FOX wird über verschiedene DeFi-Protokolle hinweg eingesetzt, um den bestmöglichen Ertrag zu erzielen.",
         "rewards": "Die Belohnungen, die Sie verdienen, akkumulieren  sich automatisch.",
         "cta": "Jetzt FOX einzahlen",
-        "foxyBalance": "FOXy Kontostand",
+        "jinxyBalance": "FOXy Kontostand",
         "withdrawals": "Abhebungen",
         "emptyWithdraws": "Ausstehende oder aktive Auszahlungen werden hier angezeigt.",
         "availableDate": "Verfügbar %{date}"
       },
-      "foxFarmingOverview": {
+      "jinxFarmingOverview": {
         "header": "Zahlen Sie ETH-FOX LP Tokens bei %{opportunity} ein, um zu verdienen",
         "body": "Genehmigen und Staken Sie Ihre Liquiditätstoken, um Ihre FOX Bonusprämien zu erhalten.",
         "rewards": "Die Belohnungen, die Sie verdienen, fallen automatisch an.",
         "cta": "Zahlen Sie jetzt ETH-FOX LP Token ein",
-        "foxFarmingBalance": "ETH-FOX LP Token Guthaben",
+        "jinxFarmingBalance": "ETH-FOX LP Token Guthaben",
         "withdrawals": "Abhebungen",
         "emptyWithdraws": "Ausstehende oder aktive Auszahlungen werden hier angezeigt.",
         "availableDate": "verfügbar %{date}"
@@ -497,7 +497,7 @@
     "overview": "Übersicht",
     "transactions": "Transaktionen",
     "tradeHistory": "Handelsverlauf",
-    "foxToken": "FOX Verdienstmöglichkeiten ",
+    "jinxToken": "FOX Verdienstmöglichkeiten ",
     "dApps": "dApps",
     "featureFlags": "Eigenschaften ändern",
     "demoMode": "Demo Modus",
@@ -510,8 +510,8 @@
     "buyCrypto": "Krypto kaufen/verkaufen",
     "buyCryptoShort": "Kauf/Verkauf",
     "arkeo": "Arkeo Airdrop",
-    "foxMissions": "FOX Mission",
-    "foxMissionsShort": "Missionen"
+    "jinxMissions": "FOX Mission",
+    "jinxMissionsShort": "Missionen"
   },
   "transactionRow": {
     "send": "Gesendet",
@@ -562,7 +562,7 @@
       "thor": {
         "transferOut": "Übertragen"
       },
-      "foxy": {
+      "jinxy": {
         "stake": "Stake",
         "unstake": "Staking beenden",
         "instantUnstake": "Staking sofort beenden",
@@ -1562,11 +1562,11 @@
     "transfers": "Überweisungen"
   },
   "plugins": {
-    "foxPage": {
+    "jinxPage": {
       "buyAssetOnCoinbase": "Kaufen Sie %{assetSymbol} auf Coinbase",
-      "totalFoxValue": "Gesamter Fox-Wert",
-      "foxToken": "ShapeShift %{assetSymbol} Token",
-      "foxDescription": "Seit 2019 bietet unser formwandelnder FOX-Token den Benutzern eine sich ständig erweiternde Welt von Nutzen und Vorteilen. Heute ermöglicht Ihnen unser ERC-20 Governance-Token nicht nur, die Zukunft von ShapeShift durch Ihre Stimme zu beeinflussen, Sie haben auch ein ständig wachsendes Universum an Investitionsmöglichkeiten. Investieren, verfolgen und verwalten Sie Ihr FOX-Guthaben hier.",
+      "totalJinxValue": "Gesamter Jinx-Wert",
+      "jinxToken": "ShapeShift %{assetSymbol} Token",
+      "jinxDescription": "Seit 2019 bietet unser formwandelnder FOX-Token den Benutzern eine sich ständig erweiternde Welt von Nutzen und Vorteilen. Heute ermöglicht Ihnen unser ERC-20 Governance-Token nicht nur, die Zukunft von ShapeShift durch Ihre Stimme zu beeinflussen, Sie haben auch ein ständig wachsendes Universum an Investitionsmöglichkeiten. Investieren, verfolgen und verwalten Sie Ihr FOX-Guthaben hier.",
       "getAsset": "%{assetSymbol} Besorgen",
       "trade": "Handeln",
       "receive": "Erhalten",
@@ -1867,23 +1867,23 @@
       "body": "Haben Sie %{asset1} und %{asset2}? Stellen Sie Liquidität für den Uniswap V2 Pool bereit, um %{apy} APR effektiven Jahreszins zu verdienen. PLUS der zugrunde liegende FOX in den FOX/ETH LP-Token, die Sie besitzen, qualifiziert sich für den Arkeo-Airdrop.",
       "cta": "Liquidität einzahlen"
     },
-    "foxTokenHolders": {
+    "jinxTokenHolders": {
       "title": "FOX-Token-Inhaber",
       "body": "Hodl FOX Token. Je größer Ihr Anteil, desto größer Ihr Arkeo Airdrop.",
       "cta": "Handel für FOX",
       "secondary": "FOX kaufen"
     },
-    "foxFarmers": {
+    "jinxFarmers": {
       "title": "FOX/ETH LP Farmer",
       "body": "Verdienen Sie bis zu %{apy} APR für das Staking Ihrer ETH/FOX LP-Tokens in der FOX Farm. PLUS der zugrunde liegende FOX in den ETH/FOX LP-Token, die Sie in Runde 5 der FOX Farm einsetzen, qualifiziert sich für den Arkeo Airdrop.",
       "cta": "Stake FOX/ETH LP"
     },
-    "foxyTokenHolders": {
+    "jinxyTokenHolders": {
       "title": "FOXy-Token-Inhaber",
       "body": "Verdienen Sie mit FOX Yieldy (FOXy) bis zu %{apy} APR auf Ihren untätigen FOX. PLUS FOXy in Ihrer Wallet wird genauso behandelt wie FOX und qualifiziert sich für den Arkeo Airdrop.",
       "cta": "Stake FOX Token"
     },
-    "foxEthProviders": {
+    "jinxEthProviders": {
       "title": "FOX/ETH Uniswap V2 LPs",
       "body": "Haben Sie %{asset1} und %{asset2}? Stellen Sie Liquidität für den Uniswap V2-Pool bereit, um %{apy} APR zu verdienen. PLUS der zugrunde liegende FOX in den FOX/ETH LP-Token, die Sie besitzen, qualifiziert sich für den Arkeo-Airdrop.",
       "cta": "Liquidität einzahlen"
@@ -1912,7 +1912,7 @@
     }
   },
   "nft": {
-    "customizeFoxatar": "FOXatar anpassen",
+    "customizeJinxatar": "FOXatar anpassen",
     "setAsAvatar": "Als Avatar festlegen",
     "floorPrice": "niedrigster Preis",
     "lastPrice": "Letzter Preis",
@@ -1949,12 +1949,12 @@
       "subtitle": "Entdecke Optimism",
       "cta": "Beginne Mission"
     },
-    "foxatar": {
+    "jinxatar": {
       "title": "Holen Sie sich ein kostenloses und anpassbares NFT",
       "subtitle": "Minte einen FOXatar",
       "cta": "Beginne Mission"
     },
-    "foxArmy": {
+    "jinxArmy": {
       "subtitle": "Treten Sie der FOX-Armee bei",
       "title": "20,000 FOX Pool",
       "cta": "Beginne Mission"

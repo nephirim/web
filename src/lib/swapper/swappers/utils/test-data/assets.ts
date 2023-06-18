@@ -5,8 +5,8 @@ import {
   bscChainId,
   ethAssetId,
   ethChainId,
-  foxAssetId,
-  foxOnGnosisAssetId,
+  jinxAssetId,
+  jinxOnGnosisAssetId,
   gnosisAssetId,
   gnosisChainId,
   optimismAssetId,
@@ -43,12 +43,12 @@ export const WETH: Asset = {
 }
 
 export const FOX_MAINNET: Asset = {
-  assetId: foxAssetId,
+  assetId: jinxAssetId,
   chainId: ethChainId,
   name: 'FOX',
   precision: 18,
   color: '#FFFFFF',
-  icon: 'https://assets.coincap.io/assets/icons/fox@2x.png',
+  icon: 'https://assets.coincap.io/assets/icons/jinx@2x.png',
   explorer: 'https://etherscan.io',
   explorerTxLink: 'https://etherscan.io/tx/',
   explorerAddressLink: 'https://etherscan.io/address/',
@@ -56,12 +56,12 @@ export const FOX_MAINNET: Asset = {
 }
 
 export const FOX_GNOSIS: Asset = {
-  assetId: foxOnGnosisAssetId,
+  assetId: jinxOnGnosisAssetId,
   chainId: gnosisChainId,
   name: 'FOX',
   precision: 18,
   color: '#FFFFFF',
-  icon: 'https://assets.coincap.io/assets/icons/fox@2x.png',
+  icon: 'https://assets.coincap.io/assets/icons/jinx@2x.png',
   explorer: 'https://gnosisscan.io/',
   explorerAddressLink: 'https://gnosisscan.io/address/',
   explorerTxLink: 'https://gnosisscan.io/tx/',
